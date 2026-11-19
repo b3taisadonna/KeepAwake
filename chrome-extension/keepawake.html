@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KeepAwake - Active</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6200EE;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🟢</div>
+        <h1>KeepAwake Active</h1>
+        <p>Your screen will stay awake while this tab is open.</p>
+        <p id="status">Attempting to acquire wake lock...</p>
+    </div>
+    <script src="keepawake.js"></script>
+</body>
+</html>
