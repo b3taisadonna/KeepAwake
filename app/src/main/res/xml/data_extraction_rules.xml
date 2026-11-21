@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <!-- Prevent data extraction for sensitive data -->
+    <cloud-backup>
+        <exclude domain="sharedpref" path="PasswordManagerPrefs.xml" />
+        <exclude domain="database" path="password_manager_db" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="PasswordManagerPrefs.xml" />
+        <exclude domain="database" path="password_manager_db" />
+    </device-transfer>
+</data-extraction-rules>

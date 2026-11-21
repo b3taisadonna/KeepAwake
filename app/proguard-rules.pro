@@ -1,23 +1,30 @@
--ignorewarnings
+# Android ProGuard rules for Password Manager
 
-# Keep all Activities, Services, and BroadcastReceivers
--keep public class * extends android.app.Activity
--keep public class * extends android.app.Service
--keep public class * extends android.content.BroadcastReceiver
+# Basic ProGuard rules for Android
+-dontwarn okio.**
+-dontwarn retrofit2.**
+-dontwarn javax.annotation.**
 
-# Keep all classes in com.example.keepawake
--keep class com.example.keepawake.** { *; }
+# Room Database
+-keep class androidx.room.** { *; }
+-dontwarn androidx.room.**
 
-# Keep all ViewModels
--keep public class * extends androidx.lifecycle.ViewModel
-
-# Keep all Composable functions
--keep class *Kt {
-    public * compose(...);
-}
+# Keep all entities and DAOs
+-keep class com.b3taisadonna.passwordmanager.** { *; }
 
 # Keep R classes
 -keep class **.R$* { *; }
 
-# Keep all annotations
--keepattributes *Annotation*
+# Keep data classes
+-keepclassmembers class * {
+    @kotlinx.android.Parcelize <methods>;
+}
+
+# Keep Parcelable classes
+-keep class * implements android.os.Parcelable {
+    public static final * CREATOR;
+}
+
+# Encryption utilities
+-keep class javax.crypto.** { *; }
+-keep class java.security.** { *; }

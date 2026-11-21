@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Keep Awake</string>
-    
-    <!-- Main Activity -->
-    <string name="keep_awake">Keep Awake</string>
-    <string name="screen_on">Screen is ON</string>
-    <string name="screen_off">Screen is OFF</string>
-    <string name="toggle_keep_awake">Toggle Keep Awake</string>
-    <string name="keep_awake_description">Prevents the screen from turning off while active</string>
-    
-    <!-- Service -->
-    <string name="notification_title">Keep Awake Active</string>
-    <string name="notification_text">Screen is being kept awake</string>
-    <string name="channel_name">Keep Awake</string>
-    <string name="channel_description">Notifications for Keep Awake service</string>
-    
-    <!-- Permissions -->
-    <string name="permission_rationale">This app needs the wake lock permission to keep your screen awake</string>
-    <string name="notification_permission_rationale">This app needs notification permission to show the keep awake status</string>
-    <string name="allow">Allow</string>
-    <string name="deny">Deny</string>
-    
-    <!-- Settings -->
+    <string name="app_name">Password Manager</string>
+    <string name="login_title">Login</string>
+    <string name="master_password_hint">Master Password</string>
+    <string name="login_button">Login</string>
+    <string name="wrong_password">Wrong master password</string>
+    <string name="set_master_password">Set Master Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="passwords_dont_match">Passwords don\'t match</string>
+    <string name="welcome_message">Welcome to Password Manager</string>
+    <string name="add_password">Add Password</string>
+    <string name="password_list_title">Your Passwords</string>
+    <string name="no_passwords">No passwords saved yet</string>
+    <string name="title_hint">Title (e.g., Google, Facebook)</string>
+    <string name="username_hint">Username or Email</string>
+    <string name="password_hint">Password</string>
+    <string name="url_hint">Website URL (optional)</string>
+    <string name="notes_hint">Notes (optional)</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="password_details">Password Details</string>
+    <string name="edit">Edit</string>
+    <string name="logout">Logout</string>
+    <string name="search_hint">Search passwords...</string>
+    <string name="generate_password">Generate Password</string>
+    <string name="password_strength">Password Strength</string>
+    <string name="weak">Weak</string>
+    <string name="medium">Medium</string>
+    <string name="strong">Strong</string>
+    <string name="very_strong">Very Strong</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="delete_confirmation">This will permanently delete the password. This action cannot be undone.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
     <string name="settings">Settings</string>
-    <string name="timeout">Auto-off timeout</string>
-    <string name="timeout_description">Turn off automatically after (minutes). 0 = never</string>
-    <string name="minutes">minutes</string>
-    <string name="never">Never</string>
-    <string name="show_notification">Show notification</string>
-    <string name="show_notification_description">Show notification when keep awake is active</string>
-    
-    <!-- Actions -->
-    <string name="stop">Stop</string>
-    <string name="start">Start</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="password_copied">Password copied to clipboard!</string>
+    <string name="username_copied">Username copied to clipboard!</string>
 </resources>

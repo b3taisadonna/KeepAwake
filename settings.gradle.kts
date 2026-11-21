@@ -1,2 +1,2 @@
-rootProject.name = "KeepAwake"
+rootProject.name = "PasswordManager"
 include(":app")
